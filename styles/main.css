@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ADD8E6; /* Doraemon's light blue color */
+    color: #000; /* Black text for contrast */
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #87CEEB; /* Slightly darker blue for header and footer */
+    color: #fff; /* White text for better readability */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-slot {
+    text-align: center;
+    background-color: #fff; /* White background for video slots */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
